@@ -1,6 +1,6 @@
-/* TODO:ADD MEDIA QUERIES;
-firstmedia query to transition  at 1275px width
-*/
+/*Chris Kanyotu Ghithub: chrispykan*/
+/*firstmedia query to transition  at  width*/
+
 *{
   -webkit-font-smoothing: antialiased;
   text-decoration: none;
@@ -74,6 +74,10 @@ h2{
   margin:5em 0 2em 0;
   margin-bottom:
 }
+
+/*-------------
+Archive section
+-------------*/
 .archive {
   display: flex;
   flex-direction: row;
@@ -104,8 +108,18 @@ button{
   padding:0.7em 2em ;
 }
 article button{
-  margin-left: 7em;
+  text-align: center;
+   display: block;
+   margin:0 auto;
 }
+button:hover {
+  background-color:#455a64 ;
+  color: #fff;
+  border-color: #455a64 ;
+}
+/*-----------
+About Section
+-----------*/
 .about{
   color: #41545f;
   background-color: #C8F3F8;
@@ -113,16 +127,14 @@ article button{
   padding-bottom: 5.5em;
 }
 .about-content{
-  margin: 0 7.7em;
+  margin: 0 20em;
 }
 .about-content h2{
   margin-bottom: 1em;
 }
-button:hover {
-  background-color:#455a64 ;
-  color: #fff;
-  border-color: #455a64 ;
-}
+/*--------
+Photo grid
+--------*/
 .photos{
   padding: 4em 4em 3em 4em;
 }
@@ -136,21 +148,24 @@ button:hover {
 .photo-grid {
   column-count: 3;
  column-gap: 1em;
- /*grid-row-gap:1em;
- grid-gap: 1em;*/
+/*grid-row-gap:1em;
+  grid-gap: 1em;
+
+can't seem to get either to work
+ */
 }
 .photo-grid img{
   padding-bottom: 1em ;
-}
-.in-touch h2{
-  margin-top: 0em;
 }
 
 /*--
 Form
 --*/
-.contact{
-  margin: 0 2em;
+.in-touch h2{
+  margin-top: 0em;
+}
+form{
+  margin:0 13.5em;
   height: 15.6em;
   background-color:#fff;
 }
@@ -169,6 +184,11 @@ Form
   margin:0 2em;
   margin-bottom: 1em
 }
+input::-webkit-input-placeholder{
+  font-size: 1em;
+  font-weight: 600;
+  color:#7a878f;
+}
 textarea{
   flex-direction: column;
   width: 99.5%;
@@ -178,13 +198,10 @@ textarea{
   border-color: #41545F;
 }
 textarea::-webkit-input-placeholder{
-color: #9AA4AA;
+color: #7a878f;
 padding-top: 1em;
 font-size: 1em;
 font-weight: 600;
-}
-.contact button{
-  width:100%;
 }
 #submit{
   width:100%;
@@ -195,10 +212,29 @@ font-weight: 600;
 #submit:hover{
   color:#fff;
 }
-input::-webkit-input-placeholder{
-  font-size: 1em;
-  font-weight: 600;
-  color:#9AA4AA;
+
+/*----
+Footer
+----*/
+footer {
+  background-color: #C8F3F8;;
+  text-align: center;
+  margin-top: 6em;
+  margin-bottom:0;
+}
+.social {
+  padding: 2em;
+  display: block;
+  margin:0 auto;
+}
+footer a {
+  color: #455a64;
+  font-size: 1.8em;
+  padding: 2%;
+}
+.subscribe{
+  display: block;
+  margin:0 auto;
 }
 .subscribe input{
   text-align: center;
@@ -206,19 +242,31 @@ input::-webkit-input-placeholder{
   width:25%;
   height:2.5em;
 }
-.subscribe button{
-  color: #41545f;
-  background-color: #c5f4f8
-  }
-.subscribe button:hover{
-  color:#fff;
-  background-color:#455a64 ;
-  }
 .subscribe-email{
-  margin-right: 1em;
+  margin-right: 2.5em;
   padding-top: 0.4em;
   margin-bottom: 5em;
 }
+.subscribe button{
+  color: #41545f;
+  background-color: #C8F3F8;
+}
+.subscribe button:hover{
+  color:#fff;
+  background-color:#455a64 ;
+}
+hr {
+  color: #41545f;
+  border: solid;
+  border-width: thin;
+}
+div p{
+  padding-bottom: 1em;
+  font-family: "lato", sans-serif;
+  margin:1em;
+  margin-bottom:0.1em;
+}
+
 
 /*----------------------
 Image and responsiveness
@@ -228,36 +276,47 @@ Image and responsiveness
   height: auto;
   width: auto;
 }
+.photo-grid img:hover {
+  opacity: .6;
+}
+  /*-----------------------
+  Medium page media queries
+  -----------------------*/
+  @media (max-width: 790px) {
+  .archive {
+    flex-direction: column;
+  }
+  article img {
+    display: block;
+    margin: 0 auto;
+  }
+  .column1,
+  .column2,
+  .column3 {
+    padding-bottom: 6em;
+  }
+  .wrap-contact {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-content {
+    margin: 0 2em;
+  }
+  .text {
+    width: 100%;
+  }
+  #email {
+    margin-left: 0;
+  }
+  #submit {
+    color: #fff;
+    background-color: #455a64;
+  }
+  form {
+    margin: 2em;
+  }
+  footer {
+    margin-top: 11em;
+  }
+}
 
-/*----
-Footer
-----*/
-footer {
-  background-color: #c5f4f8;
-  text-align: center;
-  margin-top: 6em;
-  margin-bottom:0;
-}
-footer a {
-  color: #455a64;
-  font-size: 2em;
-  padding: 2%;
-}
-.footer button{
-  font: 2em;
-  color:#9AA4AA;
-}
-hr {
-  color: #41545f;
-  border: solid;
-  border-width: thin;
-}
-.social {
-  padding: 2em;
-}
-div p{
-  padding-bottom: 1em;
-  font-family: "lato", sans-serif;
-  margin:1em;
-  margin-bottom:0.1em;
-}
