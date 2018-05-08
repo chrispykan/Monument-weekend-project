@@ -1,6 +1,4 @@
 /*Chris Kanyotu Ghithub: chrispykan*/
-/*firstmedia query to transition  at  width*/
-
 *{
   -webkit-font-smoothing: antialiased;
   text-decoration: none;
@@ -38,9 +36,7 @@ nav a {
 a:hover {
   color:#455a64 ;
 }
-.hamburger {
-  display: none;
-}
+
 
 /*----
 Header
@@ -58,6 +54,9 @@ header {
 .header-info{
   color:#fff;
   text-align: center;
+}
+.hamburger {
+  display: none;
 }
 h1 a {
   color: #fff;
@@ -230,7 +229,7 @@ footer {
 footer a {
   color: #455a64;
   font-size: 1.8em;
-  padding: 2%;
+  padding:0.5em;
 }
 .subscribe{
   display: block;
@@ -246,6 +245,7 @@ footer a {
   margin-right: 2.5em;
   padding-top: 0.4em;
   margin-bottom: 5em;
+  width:33%;
 }
 .subscribe button{
   color: #41545f;
@@ -279,10 +279,15 @@ Image and responsiveness
 .photo-grid img:hover {
   opacity: .6;
 }
-  /*-----------------------
-  Medium page media queries
-  -----------------------*/
+
+/*-----------------------
+Medium page media queries
+-----------------------*/
   @media (max-width: 790px) {
+
+nav a{
+  padding: 0 2em;
+  }
   .archive {
     flex-direction: column;
   }
@@ -290,6 +295,9 @@ Image and responsiveness
     display: block;
     margin: 0 auto;
   }
+  article p{
+  margin-top: 0;
+}
   .column1,
   .column2,
   .column3 {
@@ -308,15 +316,35 @@ Image and responsiveness
   #email {
     margin-left: 0;
   }
-  #submit {
-    color: #fff;
-    background-color: #455a64;
-  }
   form {
     margin: 2em;
   }
   footer {
     margin-top: 11em;
+  }
+}
+/*-----------------------
+Small page media queries
+-----------------------*/
+@media (max-width: 560px) {
+  .hamburger {
+    display: block;
+    font-size: 1.5em;
+    color: #fff;
+    position: absolute;
+    top: 0.5em;
+    left: 1em;
+  }
+  nav {
+    display: none;
+  }
+  .column1,
+  .column2,
+  .column3 {
+    padding-bottom: 3em;
+  }
+  article p {
+    margin-top: 0;
   }
 }
 
