@@ -33,8 +33,9 @@ nav a {
   padding: 0 3.8em;
   color: #789ba8;
 }
-a:hover {
+nav a:hover {
   color:#455a64 ;
+  transition:.4s ease-in-out;
 }
 
 
@@ -115,6 +116,7 @@ button:hover {
   background-color:#455a64 ;
   color: #fff;
   border-color: #455a64 ;
+  transition:.4s ease-in-out;
 }
 /*-----------
 About Section
@@ -210,6 +212,7 @@ font-weight: 600;
 }
 #submit:hover{
   color:#fff;
+  transition:.4s ease-in-out;
 }
 
 /*----
@@ -254,6 +257,7 @@ footer a {
 .subscribe button:hover{
   color:#fff;
   background-color:#455a64 ;
+  transition:.4s ease-in-out;
 }
 hr {
   color: #41545f;
@@ -278,6 +282,7 @@ Image and responsiveness
 }
 .photo-grid img:hover {
   opacity: .6;
+  transition:.4s ease-in-out;
 }
 
 /*-----------------------
