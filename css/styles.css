@@ -1,46 +1,39 @@
 /* TODO:ADD MEDIA QUERIES;
 firstmedia query to transition  at 1275px width
-TODO:;
 */
-
-
 *{
   -webkit-font-smoothing: antialiased;
   text-decoration: none;
 }
-
 a, h1, h2, h3, button{
   text-transform: uppercase;
-
-}
-
-html{
 }
 body{
   font-family: "Raleway", sans-serif;
-  background-color: #fff;
+  background-color: #FFF;
   color: #41545f;
   margin:0;
   margin-top:-1.2em;
 }
+html{
+ height:80vh;
+}
 
 /*-----
 Nav bar
------*/
+-------*/
 nav {
   padding: 2.5em 0 0.9em 0;
   text-align: center;
   background-color:#fff;
   width: 100%;
   position:fixed;
-
 }
 nav a {
   font-size: 1em;
   font-weight:bold;
   padding: 0 3.8em;
   color: #789ba8;
-
 }
 a:hover {
   color:#455a64 ;
@@ -51,7 +44,7 @@ a:hover {
 
 /*----
 Header
-----*/
+-----*/
 header {
   width: 100%;
   background-image: url("../images/home_header_bg.jpg");
@@ -61,12 +54,10 @@ header {
   padding-bottom: 1.2em;
   height: 100vh;
   padding-top:21em;
-
 }
 .header-info{
-color:#fff;
-text-align: center;
-
+  color:#fff;
+  text-align: center;
 }
 h1 a {
   color: #fff;
@@ -75,21 +66,22 @@ h1 a {
 div h2{
 font-size: 1.4em
 }
+.header-info h2{
+  margin-top: 1em;
+}
 h2{
   text-align: center;
-  margin:2em;
-  margin-top: 5em;
+  margin:5em 0 2em 0;
+  margin-bottom:
 }
 .archive {
   display: flex;
   flex-direction: row;
   margin: 0 2em;
   padding-bottom:6.75em;
-
 }
 .column1{
   margin:0  0.5em;
-
 }
 .column2{
   margin:0  0.5em;
@@ -110,22 +102,21 @@ button{
   border:0.15em solid;
   border-color: #41545F;
   padding:0.7em 2em ;
-
 }
 article button{
-  margin-left: 7.5em;
-
+  margin-left: 7em;
 }
-
 .about{
   color: #41545f;
   background-color: #C8F3F8;
-
-padding-top: 0.1em;
-padding-bottom: 5.5em;
+  padding-top: 0.1em;
+  padding-bottom: 5.5em;
 }
 .about-content{
-margin: 0 9.8em;
+  margin: 0 7.7em;
+}
+.about-content h2{
+  margin-bottom: 1em;
 }
 button:hover {
   background-color:#455a64 ;
@@ -133,10 +124,14 @@ button:hover {
   border-color: #455a64 ;
 }
 .photos{
-  padding: 4em;
+  padding: 4em 4em 3em 4em;
+}
+.photos h2{
+  margin-top: 2.5em;
 }
 .photos h3{
   padding-bottom:2em;
+  margin-top: 0;
 }
 .photo-grid {
   column-count: 3;
@@ -147,107 +142,92 @@ button:hover {
 .photo-grid img{
   padding-bottom: 1em ;
 }
+.in-touch h2{
+  margin-top: 0em;
+}
 
 /*--
 Form
 --*/
 .contact{
-
   margin: 0 2em;
   height: 15.6em;
   background-color:#fff;
-
 }
 .wrap-contact{
   display: flex;
   flex-direction: row;
-
 }
 .text{
-
   border:0.15em solid;
   border-color: #41545F;
-width:33%;
-height:2.5em;
+  width:33%;
+  height:2.5em;
   margin-bottom: 1em;
 }
 #email{
   margin:0 2em;
   margin-bottom: 1em
 }
-
-
 textarea{
   flex-direction: column;
-width: 99.5%;
-height:13.5em;
-margin-bottom: 1em;
-border:0.15em solid;
+  width: 99.5%;
+  height:13.5em;
+  margin-bottom: 1em;
+  border:0.15em solid;
   border-color: #41545F;
 }
-::-webkit-input-placeholder {
-   font-size: 1em;
-  font-weight: 600;
-  color:#9AA4AA;
-
+textarea::-webkit-input-placeholder{
+color: #9AA4AA;
+padding-top: 1em;
+font-size: 1em;
+font-weight: 600;
 }
 .contact button{
-   width:100%;
-
-
+  width:100%;
 }
-
 #submit{
   width:100%;
-   font-size: 0.8em;
-font-weight: 500;
+  font-size: 0.8em;
+  font-weight: 500;
   color:#41545F;
-
 }
-
+#submit:hover{
+  color:#fff;
+}
 input::-webkit-input-placeholder{
   font-size: 1em;
   font-weight: 600;
   color:#9AA4AA;
 }
-
 .subscribe input{
   text-align: center;
   border:none;
-width:25%;
-height:2.5em;
-
+  width:25%;
+  height:2.5em;
 }
 .subscribe button{
   color: #41545f;
   background-color: #c5f4f8
-
-}
+  }
+.subscribe button:hover{
+  color:#fff;
+  background-color:#455a64 ;
+  }
 .subscribe-email{
   margin-right: 1em;
   padding-top: 0.4em;
   margin-bottom: 5em;
 }
 
-}
-
-
-/*------------------
+/*----------------------
 Image and responsiveness
-------------------*/
+----------------------*/
   img {
   max-width: 100%;
   height: auto;
   width: auto;
 }
-
-.footer button{
-  font: 2em;
-  color:#9AA4AA;
-}
-
-
-
 
 /*----
 Footer
@@ -255,22 +235,29 @@ Footer
 footer {
   background-color: #c5f4f8;
   text-align: center;
-  margin: 2em 0;
+  margin-top: 6em;
+  margin-bottom:0;
 }
 footer a {
   color: #455a64;
   font-size: 2em;
   padding: 2%;
 }
+.footer button{
+  font: 2em;
+  color:#9AA4AA;
+}
 hr {
   color: #41545f;
   border: solid;
   border-width: thin;
-
 }
 .social {
   padding: 2em;
 }
 div p{
-  padding-bottom: 3em;
+  padding-bottom: 1em;
+  font-family: "lato", sans-serif;
+  margin:1em;
+  margin-bottom:0.1em;
 }
